@@ -265,7 +265,7 @@ h1 {
 }
 
 ul{
-  margin-top: 0px;
+  margin: 0px;
 }
 
 .Sign-in {
@@ -463,6 +463,14 @@ p {
     text-align: left;
   }
 
+
+
+  .main-banner{
+    padding-bottom: 16px;
+    z-index: 1;
+  }
+
+
   .productivity {
     padding-bottom: 0.5rem;
   }
@@ -487,6 +495,21 @@ p {
   }
 }
 
+
+
+@media screen and(max-width:1440px) {
+ .main-banner{ 
+  margin-left: 16.6667%;
+  left: 16.6667%;
+  display: block;
+  flex: 0 0 auto;
+  width: 58.3333%;
+  margin-top: 0px;
+  padding-top: 128px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+}
 
 @media screen and (max-width:991.98px) {
   .select-language{
@@ -536,9 +559,6 @@ line-height: 1.2;
 .info {
   scroll-margin-top: 72px;
 }
-.info-style :last-child {
-  margin-bottom: 0px;
-}
 
 .info-container {
   position: relative;
@@ -555,6 +575,8 @@ line-height: 1.2;
 }
 
 
+
+
 .info-container :last-child {
   margin-bottom: 0px;
   overflow: hidden;
@@ -562,7 +584,7 @@ line-height: 1.2;
 .mob-info {
   /* overflow: hidden; */
   width: 100%;
- padding: 16px 0px 24px 0px;
+  padding: 16px 0px 24px 0px;
 }
 
 .info-container :last-child :last-child {
@@ -622,6 +644,16 @@ body a{
   padding: 16px 16px 16px 24px;
   position: relative;
   text-align: left;
+}
+
+
+.btn-info div h4{
+  font-family: 'Charlie-SB';
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .btn-info div {
@@ -907,7 +939,6 @@ margin-bottom: 0px;
 
 
 
-
 .trello-styling{
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
@@ -1102,6 +1133,7 @@ scroll-margin-top: 72px;
 .link-list p{
 width: 60%;
 padding: 0px;
+margin-bottom: 0px;
 }
 .link-1{
   display: flex;
@@ -1109,7 +1141,7 @@ padding: 0px;
   padding-bottom: 9.6px;
 }
 .link-list-style{
-  font-family: 'Charlie-Text';
+  font-family: 'Charlie-Regular';
   font-size: 16px;
   line-height: 24px;
   margin: 0px !important;
@@ -1135,6 +1167,7 @@ padding: 0px;
 .footer-links li{
   border-bottom: 1px solid rgb(80, 95, 121);
   margin: 0px 0px 16px;
+  padding: 0px 0px 16px;
 }
 .footer-end{
   color: rgb(255, 255, 255);
@@ -1175,7 +1208,7 @@ padding: 0px;
 .select-language select > option{
   margin-bottom: 0px;
 }
-.select-language select{
+.select-language form select{
   appearance: none;
   background-color: transparent;
   background-image: url(img/down-arrow.svg);
@@ -1185,9 +1218,9 @@ padding: 0px;
   color: rgb(255, 255, 255);
   cursor: pointer;
   display: block;
-  font-family: 'Charlie-Text';
+  font-family: 'Charlie-Regular';
   font-size: 16px;
-  padding-right: 16px;
+  padding-right: 80px;
   position: relative;
   max-width: 100%;
   white-space: nowrap;
